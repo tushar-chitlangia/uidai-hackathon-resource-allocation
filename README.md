@@ -1,6 +1,6 @@
 # Geopolitical Resource Optimization & Aadhaar Service Demand Pipeline
 
-An end-to-end data engineering and administrative resource-allocation pipeline developed for the UIDAI Data Hackathon 2026. This system processes multi-stream, asynchronous transactional datasets across 700+ districts in India, normalizing population-scale data to automatically classify regional service demand hotspots into actionable operational zones.
+An data engineering and administrative resource-allocation pipeline developed for the UIDAI Data Hackathon 2026. This system processes multi-stream, asynchronous transactional datasets across 700+ districts in India, normalizing population-scale data to automatically classify regional service demand hotspots into actionable operational zones.
 
 ---
 
