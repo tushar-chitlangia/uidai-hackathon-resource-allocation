@@ -1,6 +1,6 @@
 # Geopolitical Resource Optimization & Aadhaar Service Demand Pipeline
 
-An end-to-end data engineering and administrative resource-allocation pipeline developed for the UIDAI Data Hackathon. This system processes multi-stream, asynchronous transactional datasets across 700+ districts in India, normalizing population-scale data to automatically classify regional service demand hotspots into actionable operational zones.
+An end-to-end data engineering and administrative resource-allocation pipeline developed for the UIDAI Data Hackathon 2026. This system processes multi-stream, asynchronous transactional datasets across 700+ districts in India, normalizing population-scale data to automatically classify regional service demand hotspots into actionable operational zones.
 
 ---
 
@@ -30,12 +30,12 @@ The project implements a decoupled, parallel-stream data pipeline that processes
 ├──► 1. Enrolment Stream ───► [Date Parse] ─► [District Aggregation] ──┐
 ├──► 2. Demographics Stream ─► [Date Parse] ─► [District Aggregation] ──┼─► [Spatial Normalization Engine]
 └──► 3. Biometrics Stream ──► [Date Parse] ─► [District Aggregation] ──┘                 │
-▼
-[Quantile Rule Engine]
-│
-▼
-[4-Tier Demand Zones Matrix]
-
+                                                                                         ▼
+                                                                             [Quantile Rule Engine]
+                                                                                         │
+                                                                                         ▼
+                                                                             [4-Tier Demand Zones Matrix]
+                                                                             
 ### 1. Data Ingestion & Micro-Pipelines
 The system handles three separate high-volume transactional streams:
 * **New Enrolments Pipeline:** Processes demographic registrations across three key age brackets (`age_0_5`, `age_5_17`, `age_18_greater`).
