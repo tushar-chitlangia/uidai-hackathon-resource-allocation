@@ -30,11 +30,11 @@ The project implements a decoupled, parallel-stream data pipeline that processes
 ├──► 1. Enrolment Stream ───► [Date Parse] ─► [District Aggregation] ──┐
 ├──► 2. Demographics Stream ─► [Date Parse] ─► [District Aggregation] ──┼─► [Spatial Normalization Engine]
 └──► 3. Biometrics Stream ──► [Date Parse] ─► [District Aggregation] ──┘                 │
-                                                                                         ▼
-                                                                             [Quantile Rule Engine]
-                                                                                         │
-                                                                                         ▼
-                                                                             [4-Tier Demand Zones Matrix]
+▼
+[Quantile Rule Engine]
+│
+▼
+[4-Tier Demand Zones Matrix]
                                                                              
 ### 1. Data Ingestion & Micro-Pipelines
 The system handles three separate high-volume transactional streams:
